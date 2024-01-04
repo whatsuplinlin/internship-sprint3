@@ -182,7 +182,7 @@ const calculateTotal = computed(() => {
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 900px) {
+@media (min-width: 1290px) {
   .section-checkout {
     display: flex;
     justify-content: center;
@@ -317,7 +317,142 @@ const calculateTotal = computed(() => {
   }
 }
 
-@media (max-width: 430px) and (min-width: 300px) {
+@media (min-width: 768px) {
+  .section-checkout {
+    margin: 63px 0 123px;
+    & .billing-detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & h1 {
+        font-size: 32px;
+        margin: 35px 0 0;
+      }
+      & #name {
+        display: flex;
+        gap: 30px;
+        & #input {
+          & input {
+            width: 150px;
+          }
+        }
+      }
+      & #input {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        font-weight: 500;
+        gap: 22px;
+        margin-top: 36px;
+        & input {
+          width: 370px;
+          height: 65px;
+          border-radius: 10px;
+          border: 1px solid #9f9f9f;
+          padding-left: 30px;
+        }
+        & input::placeholder {
+          color: #9f9f9f;
+          font-size: 16px;
+        }
+      }
+    }
+    & .place-order {
+      padding: 0 16px;
+      & p {
+        margin: 0;
+      }
+      & .receipt {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 87px;
+        & h2 {
+          font-weight: 500;
+          margin: 0 0 14px;
+        }
+        & .product {
+          & #product-name-quantity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+            font-weight: 500;
+            & p:first-child {
+              color: #9f9f9f;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+          & #subtotal {
+            margin: 22px 0;
+          }
+        }
+        & .subtotal {
+          text-align: right;
+          padding-bottom: 33.5px;
+          & p {
+            font-weight: 300;
+          }
+          & #price-container {
+            padding-right: 4px;
+          }
+          & #subtotal {
+            margin: 22px 0 16px;
+          }
+          & #total {
+            width: auto;
+            color: #b88e2f;
+            font-size: 24px;
+            font-weight: 700;
+          }
+        }
+      }
+      & .payment-method {
+        padding-top: 22.5px;
+        border-top: #d9d9d9 solid 1px;
+        & .selected-method,
+        & .method {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          margin-bottom: 11px;
+        }
+        & .method {
+          color: #9f9f9f;
+          font-weight: 500;
+        }
+        & .method:nth-child(4) {
+          margin-bottom: 25px;
+        }
+        & #bank-transfer,
+        & #policy {
+          text-align: justify;
+          font-weight: 300;
+          margin: 0 0 39px;
+        }
+        & #bank-transfer {
+          color: #9f9f9f;
+          margin: 0 0 25px;
+        }
+        & #btn {
+          display: flex;
+          justify-content: center;
+          & button {
+            width: 318px;
+            height: 64px;
+            background: none;
+            border-radius: 15px;
+            border: 1px solid #000;
+            font-size: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
   .section-checkout {
     margin: 63px 0 123px;
     & .billing-detail {

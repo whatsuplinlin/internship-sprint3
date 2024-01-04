@@ -483,7 +483,7 @@ watchEffect(() => {
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 900px) {
+@media (min-width: 1290px) {
   .small-banner {
     display: flex;
     justify-content: space-between;
@@ -575,7 +575,102 @@ watchEffect(() => {
   }
 }
 
-@media (max-width: 430px) and (min-width: 300px) {
+@media (min-width: 768px) {
+  .small-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 63px;
+    background: #f9f1e7;
+    & p {
+      margin: 0;
+    }
+    & .filtering {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #9f9f9f;
+      & #filter {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 14px;
+      }
+      & #border {
+        height: 37px;
+        border-left: #9f9f9f solid 2px;
+        padding-left: 15px;
+        line-height: 37px;
+        font-size: 14px;
+      }
+    }
+    & .showing {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      & p:first-child,
+      & p:nth-child(3) {
+        font-size: 14px;
+      }
+      & #dropdown-show,
+      & #dropdown-sort {
+        color: #9f9f9f;
+        font-size: 14px;
+        background: #fff;
+        height: 50px;
+        line-height: 50px;
+        border: none;
+      }
+      & #dropdown-show {
+        width: 50px;
+        text-align: center;
+        margin-right: 10px;
+      }
+      & #dropdown-sort {
+        width: 150px;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  .section-shop {
+    & .list-product {
+      display: grid;
+      grid-template-columns: repeat(2, 285px);
+      justify-content: center;
+      gap: 32px;
+      margin: 0;
+    }
+    & .page-number {
+      margin: 70px 0 85px;
+      display: flex;
+      justify-content: center;
+      & button {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        border: none;
+        background: #f9f1e7;
+        font-size: 20px;
+        margin-right: 38px;
+        cursor: pointer;
+      }
+      & button:disabled {
+        background: #b88e2f;
+        color: #fff;
+      }
+      & #btn-next {
+        width: 98px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
   .small-banner {
     display: flex;
     flex-direction: column;

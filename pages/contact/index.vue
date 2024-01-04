@@ -128,7 +128,7 @@ const title = {
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 900px) {
+@media (min-width: 1290px) {
   .section-contact {
     padding: 98px 0 63px;
     & .title {
@@ -213,7 +213,7 @@ const title = {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1289px) {
   .section-contact {
     padding: 98px 16px 63px;
     & .title {
@@ -296,4 +296,88 @@ const title = {
     }
   }
 }
+
+// @media (max-width: 767px) {
+//   .section-contact {
+//     padding: 98px 16px 63px;
+//     & .title {
+//       margin: 0 auto;
+//       text-align: center;
+//       & h1 {
+//         font-size: 32px;
+//         margin: 0;
+//       }
+//       & p {
+//         font-size: 14px;
+//         color: #9f9f9f;
+//         margin: 0 0 42px;
+//       }
+//     }
+//     & .contact {
+//       & #contact {
+//         display: flex;
+//         justify-content: center;
+//         gap: 30px;
+//         margin-bottom: 42px;
+//         & svg {
+//           padding-top: 6px;
+//         }
+//         & div {
+//           & h2 {
+//             font-weight: 500;
+//             margin: 0;
+//           }
+//           & p {
+//             width: 240px;
+//             color: #000;
+//             font-weight: 400;
+//           }
+//         }
+//       }
+//       & #message {
+//         display: flex;
+//         flex-direction: column;
+//         // margin: 0 14px;
+//         gap: 22px;
+//         & label {
+//           font-weight: 500;
+//         }
+//         & input,
+//         & textarea {
+//           width: calc(100% - 60px);
+//           // max-width: 370px;
+//           // height: 75px;
+//           border-radius: 10px;
+//           border: 1px solid #9f9f9f;
+//           margin-bottom: 36px;
+//           padding: 30px 24px;
+//         }
+//         & input::placeholder,
+//         & textarea::placeholder {
+//           color: #9f9f9f;
+//           font-size: 16px;
+//           font-family: Poppins;
+//         }
+//         & textarea {
+//           height: 120px;
+//           padding-top: 26px;
+//         }
+//       }
+//       & #btn {
+//         display: flex;
+//         justify-content: center;
+//         & button {
+//           width: 237px;
+//           height: 55px;
+//           border-radius: 5px;
+//           border: none;
+//           background: #b88e2f;
+//           color: #fff;
+//           font-size: 16px;
+//           margin-top: 13px;
+//         }
+//       }
+//     }
+//   }
+// }
 </style>

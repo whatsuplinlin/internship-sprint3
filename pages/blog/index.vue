@@ -153,7 +153,7 @@ const post = [
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 900px) {
+@media (min-width: 1290px) {
   .section-blog {
     display: flex;
     gap: 71px;
@@ -212,7 +212,7 @@ const post = [
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1289px) {
   .section-blog {
     margin: 106px 0 58px;
     & .page-number {
@@ -271,4 +271,64 @@ const post = [
     }
   }
 }
+
+// @media (max-width: 767px) {
+//   .section-blog {
+//     margin: 106px 0 58px;
+//     & .page-number {
+//       display: flex;
+//       justify-content: center;
+//       margin: 0 0 80px;
+//       & button {
+//         width: 60px;
+//         height: 60px;
+//         border-radius: 10px;
+//         border: none;
+//         background: #f9f1e7;
+//         font-size: 20px;
+//         margin-right: 38px;
+//         cursor: pointer;
+//       }
+//       & button:disabled {
+//         background: #b88e2f;
+//         color: #fff;
+//       }
+//       & #btn-next {
+//         width: 78px;
+//         margin: 0;
+//       }
+//     }
+//     & .search-bar {
+//       margin: 30px 0;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       gap: 15px;
+//       & input {
+//         width: 311px;
+//         height: 58px;
+//         border-radius: 10px;
+//         border: 1px solid #9f9f9f;
+//       }
+//     }
+//     & .categories {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       & h2 {
+//         font-weight: 500;
+//         margin: 43px 0 33px;
+//       }
+//     }
+//     & .recent-posts {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       & h2 {
+//         font-weight: 500;
+//         margin: 77px 0 26px;
+//       }
+//     }
+//   }
+// }
 </style>
